@@ -1,0 +1,50 @@
+@import "../../scss/mixins";
+
+.new {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+
+    &-image {
+      margin-right: 1rem;
+
+      & > img {
+        width: 20rem;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 0.3rem;
+        @include respond(phone) {
+          width: 12rem;
+          height: 12rem;
+        }
+      }
+    }
+    &-content {
+      & > h3 {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-bottom: 1rem;
+        @include respond(phone) {
+          font-size: 1.5rem;
+          padding-bottom: 0.1rem;
+        }
+      }
+      & > p {
+        font-size: 1rem;
+        color: #ffffff;
+        font-weight: 300;
+        line-height: 1.5rem;
+        @include respond(phone) {
+          line-height: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+.news-divider {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1.5px solid #666769;
+}

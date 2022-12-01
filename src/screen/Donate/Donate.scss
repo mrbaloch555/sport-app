@@ -1,0 +1,105 @@
+@import "../../scss/variable";
+@import "../../scss/mixins";
+
+.donate {
+  @include respond(big-desktop) {
+    width: 1050px;
+    margin: auto;
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+  }
+  &-container {
+    width: 40%;
+    background-color: $footer-background;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    @include respond(tab-port) {
+      margin-top: 2rem;
+      width: 80%;
+    }
+    & > h4 {
+      color: white;
+      font-size: 2rem;
+      font-weight: 300;
+      padding-bottom: 0.7rem;
+    }
+    &-box {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 0.8rem;
+      & > button {
+        background-color: #666769ad;
+        border: none;
+        color: white;
+        padding: 1rem 0rem;
+        cursor: pointer;
+        font-weight: 300;
+      }
+    }
+    &-field {
+      margin-top: 0.8rem;
+      background-color: #666769ad;
+      padding: 1rem 0.8rem;
+      color: white;
+      & > h4 {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+    &-duration {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.8rem;
+      & > * {
+        background-color: #666769ad;
+        border: none;
+        color: white;
+        padding: 1rem 0rem;
+        cursor: pointer;
+        font-weight: 300;
+        width: 50%;
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+    &-or {
+      & > center {
+        color: white;
+        padding: 1rem 0rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.donate-line {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  @include respond(tab-port) {
+    width: 80%;
+  }
+  & > h4 {
+    color: $light-blue;
+    font-size: 2rem;
+    padding-right: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  &-border {
+    border-bottom: 2px solid $light-blue;
+    width: 89%;
+    @include respond(tab-port) {
+      width: 96%;
+    }
+  }
+}

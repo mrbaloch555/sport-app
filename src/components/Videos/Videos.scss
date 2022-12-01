@@ -1,0 +1,12 @@
+@import "../../scss/mixins";
+.video {
+  margin-top: 2rem;
+  & > iframe {
+    height: 45vh;
+    width: 100%;
+
+    @include respond(phone) {
+      height: 30vh;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import "../../scss/variable";
+@import "../../scss/mixins";
+
+.line-middle-top {
+  &-center {
+    &-date {
+      margin-top: 2rem;
+      & > center {
+        & > h5 {
+          color: white;
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+      }
+    }
+    &-old {
+      &-text {
+        color: white;
+        margin-top: 1.2rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    }
+  }
+  &-vs {
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    &-left {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      & > img {
+        width: 6.5rem;
+        height: 6.5rem;
+      }
+      & > h1 {
+        font-size: 2.5rem;
+        margin-left: 2rem;
+        font-weight: 500;
+      }
+    }
+    &-middle > p {
+      font-weight: 200;
+      font-size: 1.5rem;
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > img {
+        width: 6.5rem;
+        height: 6.5rem;
+      }
+      & > h1 {
+        font-size: 2.5rem;
+        margin-right: 2rem;
+        font-weight: 500;
+      }
+    }
+  }
+  &-half {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    & > center {
+      color: #4ae96d;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.line-middle-top-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &-half {
+    margin-top: 2rem;
+    color: #4ae96d;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  &-btn {
+    margin-top: 2rem;
+  }
+}
+
+.middle-live-btn {
+  color: $white;
+
+  background-color: $btn-background;
+  // padding: 0.7rem 1.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: #ff4747a8;
+  }
+  display: flex;
+  align-items: center;
+  & > div {
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: $white;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+    animation: hbeat 0.8s ease-in-out infinite;
+  }
+}

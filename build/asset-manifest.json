@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9b15114a.css",
+    "main.js": "/static/js/main.ee244c1b.js",
+    "static/media/backimage.png": "/static/media/backimage.75890668b5f205f57133.png",
+    "static/media/league.svg": "/static/media/league.04c9ca5abac5d6e341b44b97bd1b2d79.svg",
+    "static/media/newsImage.png": "/static/media/newsImage.c59aa74bc0505863ed4c.png",
+    "static/media/logo.png": "/static/media/logo.9c06543770f748b4a8bf.png",
+    "static/media/first.png": "/static/media/first.21e1a64470c911d36108.png",
+    "static/media/second.png": "/static/media/second.a3aaba50839b923043c0.png",
+    "static/media/footballNew.svg": "/static/media/footballNew.c893f1a2358150af4fd37e90ac294b0c.svg",
+    "static/media/nfl.svg": "/static/media/nfl.979164c51483c74f05355ff4ae6e4dd9.svg",
+    "static/media/boxing.svg": "/static/media/boxing.090711ba567d879df53021c77f742ee5.svg",
+    "static/media/other.svg": "/static/media/other.2fe1b9eb43e98ad56415c1a06546d3f3.svg",
+    "static/media/basketball.svg": "/static/media/basketball.0ff745aa2f166959fe0c08420ca07525.svg",
+    "static/media/chatango.svg": "/static/media/chatango.a6b1768b7f24acb9335f6610e03cdcb1.svg",
+    "static/media/goto.svg": "/static/media/goto.539f1f37cf700b4a712c8ed730c750c9.svg",
+    "static/media/three.svg": "/static/media/three.ce51642d5c5306b486dd094e82c5567d.svg",
+    "index.html": "/index.html",
+    "static/media/downarrow.svg": "/static/media/downarrow.6c3e65390771858cd9f4f91083feaec8.svg",
+    "static/media/uparrow.svg": "/static/media/uparrow.407fccb91ba48848de7adaff282e601f.svg",
+    "static/media/first.svg": "/static/media/first.07a24ddd01db955ccef72a7162deaba0.svg",
+    "static/media/second.svg": "/static/media/second.c10ac6ccac0377eaf428f0c02d617d84.svg",
+    "main.9b15114a.css.map": "/static/css/main.9b15114a.css.map",
+    "main.ee244c1b.js.map": "/static/js/main.ee244c1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b15114a.css",
+    "static/js/main.ee244c1b.js"
+  ]
+}

@@ -1,0 +1,120 @@
+@import "../../scss/variable";
+@import "../../scss/mixins";
+.chatango {
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  bottom: 19%;
+  right: 10.5%;
+  z-index: 10000000;
+  @include respond(tab-port) {
+    right: 16%;
+    bottom: 16%;
+  }
+  @include respond(phone) {
+    bottom: 14%;
+    right: 16%;
+  }
+  &-icon {
+    position: fixed;
+    height: 8.5rem;
+    width: 8.5rem;
+    & > img {
+      cursor: pointer;
+    }
+    @include respond(phone) {
+      height: 6.5rem;
+      width: 6.5rem;
+    }
+  }
+}
+
+.chatango-up {
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  bottom: 79%;
+  right: 10.5%;
+  z-index: 10000000;
+  @include respond(tab-port) {
+    right: 16%;
+    bottom: 79%;
+  }
+  @include respond(phone) {
+    bottom: 75%;
+    right: 16%;
+  }
+}
+
+.chat {
+  position: absolute;
+  bottom: 63%;
+  right: 29%;
+  z-index: 10000000;
+  transition: 1s ease-in-out;
+  @include respond(tab-port) {
+    right: 16%;
+    bottom: 79%;
+  }
+  @include respond(phone) {
+    bottom: 62%;
+    right: 70%;
+  }
+  &-non {
+    display: none;
+  }
+  &-box {
+    position: fixed;
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include respond(tab-port) {
+      width: 60%;
+    }
+
+    animation-delay: 1s;
+    &-top {
+      background-color: $light-blue;
+      padding: 0.7rem 0rem;
+      color: white;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      & > center {
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+    }
+    &-chat {
+      background-color: white;
+      height: 48vh;
+    }
+    &-input {
+      background-color: #1b2328;
+      padding: 1rem 1rem;
+      border-end-end-radius: .5rem;
+      border-end-start-radius: .5rem;
+      &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        &-file {
+          color: white;
+        }
+        &-icon {
+          padding: 0.3rem;
+          background-color: $light-blue;
+          border-radius: 50%;
+          cursor: pointer;
+          font-size: 1.5rem;
+        }
+        & > input {
+          width: 70%;
+          padding: 0.2rem 0.5rem;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
